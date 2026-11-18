@@ -47,7 +47,7 @@ scripts/           ← generate-assets.mjs (OG + ícones), smoke-test.cjs
 ## Inserir as fotografias
 
 1. Salve os arquivos em `public/images/projetos/` (JPG ou WebP, lado maior com cerca de 2400 px, até ~400 KB).
-2. Em `src/content/projects.ts`, preencha `src: '/images/projetos/arquivo.jpg'`, o `alt` e os dados confirmados (`title`, `category`, `location`, `year`, `description`) e mude `confirmed` para `true`.
+2. Em `src/content/projects.ts`, preencha `src: asset('images/projetos/arquivo.jpg')`, apague a linha `illustrative`, o `alt` e os dados confirmados (`title`, `category`, `location`, `year`, `description`) e mude `confirmed` para `true`.
 3. Para o hero e o retrato, preencha `heroImage.src` e `portraitImage.src` no mesmo arquivo.
 
 Enquanto não houver `src`, ou se o arquivo falhar, o componente `ImageSlot` mostra um espaço reservado com desenho de linha e a descrição da foto esperada. Durante o carregamento aparece um brilho discreto; ao terminar, a imagem entra com fade.
@@ -55,10 +55,20 @@ Enquanto não houver `src`, ou se o arquivo falhar, o componente `ImageSlot` mos
 ## Antes de publicar
 
 - Em `src/content/site.ts`, mude `showDraftNotes` para `false`. Isso esconde todas as anotações "A confirmar" e as legendas "Fotografia a fornecer".
-- Troque `https://douglasbahia.com.br` (domínio provisório) pelo domínio real em `index.html`, `public/robots.txt`, `public/sitemap.xml` e `src/content/site.ts`.
+- Troque `https://iltonferreira.github.io/douglas-bahia` (domínio provisório) pelo domínio real em `index.html`, `public/robots.txt`, `public/sitemap.xml` e `src/content/site.ts`.
 - Se mudar nome ou cores, regenere a imagem de compartilhamento e os ícones com `npm run assets` (requer Playwright).
 
+## Imagens ilustrativas
+
+As fotos em `public/images/exemplos/` são exemplos do Unsplash (licença livre, créditos em `creditos.json`). Elas aparecem com o selo "Imagem ilustrativa" e com o crédito do fotógrafo na galeria. **Não são trabalhos do Douglas**: troque pelas fotos reais antes de usar o site como portfólio dele.
+
 ## Publicar
+
+### GitHub Pages (configurado)
+
+Cada `push` na branch `main` roda `.github/workflows/deploy.yml`, que gera o build com `BASE_PATH=/douglas-bahia/` e publica em https://iltonferreira.github.io/douglas-bahia/. Se o nome do repositório mudar, ajuste `BASE_PATH` no workflow.
+
+### Outras opções
 
 O resultado de `npm run build` é um site estático em `dist/`.
 

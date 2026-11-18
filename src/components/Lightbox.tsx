@@ -50,7 +50,7 @@ export function Lightbox({ items, index, onChange }: LightboxProps) {
       else if (e.key === 'ArrowRight') go(1)
       else if (e.key === 'ArrowLeft') go(-1)
       else if (e.key === 'Tab' && dialogRef.current) {
-        const f = [...dialogRef.current.querySelectorAll<HTMLElement>('button')]
+        const f = [...dialogRef.current.querySelectorAll<HTMLElement>('button, a')]
         const first = f[0]
         const last = f[f.length - 1]
         if (e.shiftKey && document.activeElement === first) {
@@ -99,6 +99,17 @@ export function Lightbox({ items, index, onChange }: LightboxProps) {
         <figcaption className="lightbox__caption">
           <strong>{item.title}</strong>
           <span>{item.meta}</span>
+          {item.image.illustrative && (
+            <a
+              className="lightbox__credit"
+              href={item.image.illustrative.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Imagem ilustrativa · Foto de {item.image.illustrative.photographer} no Unsplash
+              <span className="visually-hidden"> (abre em nova aba)</span>
+            </a>
+          )}
         </figcaption>
       </figure>
 

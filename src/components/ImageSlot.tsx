@@ -36,6 +36,9 @@ export function ImageSlot({ image, variant = 0, className = '', priority = false
           onError={() => setStatus('error')}
         />
       )}
+      {image.illustrative && !showPlaceholder && (
+        <span className="image-slot__badge">Imagem ilustrativa</span>
+      )}
       {showPlaceholder && (
         <div className="image-slot__placeholder" role="img" aria-label={`${image.alt} (fotografia a fornecer)`}>
           <ArchDrawing variant={variant} />

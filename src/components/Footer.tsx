@@ -66,6 +66,14 @@ export function Footer() {
         <p>
           © {year} {site.name}. Todos os direitos reservados.
         </p>
+        <p>
+          Imagens ilustrativas:{' '}
+          <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="footer__credit">
+            Unsplash
+            <span className="visually-hidden"> (abre em nova aba)</span>
+          </a>
+          , créditos na galeria.
+        </p>
         <a href="#inicio" className="footer__top">
           Voltar ao topo <span aria-hidden="true">↑</span>
         </a>

@@ -47,7 +47,7 @@ Esses pontos estão marcados na página com o selo **"A confirmar"** (somem quan
 
 ## 4. Fotografias necessárias (autorização + arquivo original)
 
-Nenhuma fotografia do Douglas ou de projetos dele foi usada. Publicação no Instagram não autoriza reprodução, e não houve acesso aos arquivos. Também não foram usadas imagens de banco. Todos os espaços estão prontos e identificados:
+Nenhuma fotografia do Douglas ou de projetos dele foi usada (os espaços estão com exemplos ilustrativos do Unsplash, ver seção 5). Publicação no Instagram não autoriza reprodução, e não houve acesso aos arquivos. Também não foram usadas imagens de banco. Todos os espaços estão prontos e identificados:
 
 | # | Local na página | O que deve mostrar | Proporção |
 |---|---|---|---|
@@ -70,7 +70,26 @@ Para cada projeto, pedir também: nome, categoria, cidade, ano, uma descrição 
 | Desenhos de linha nos espaços reservados | Criados para este projeto (SVG). Não representam nenhuma obra real. |
 | Favicon, ícones e `og-image.png` | Criados para este projeto (tipografia + paleta do briefing), gerados por `scripts/generate-assets.mjs`. |
 | Fontes Cormorant Garamond e Inter | Google Fonts, licença SIL Open Font License. |
-| Fotografias | Nenhuma. |
+| Fotografias do Douglas ou de projetos dele | Nenhuma. |
+| Fotos de exemplo (9) | Unsplash, licença Unsplash (uso livre, inclusive comercial). Ver tabela abaixo. |
+
+### Imagens ilustrativas (adicionadas a pedido, 18/11/2026)
+
+A pedido, os espaços de foto foram preenchidos com exemplos do Unsplash para a apresentação. **Nenhuma delas é trabalho do Douglas.** Todas aparecem com o selo "Imagem ilustrativa", e a galeria ampliada mostra o crédito do fotógrafo. O rodapé também cita o Unsplash. No lugar do retrato do Douglas foi usada uma mesa de trabalho com plantas arquitetônicas, e não o rosto de outra pessoa, para não sugerir que é ele. O hero é uma renderização 3D, não uma foto.
+
+| Arquivo | Fotógrafo | Origem |
+|---|---|---|
+| `hero.jpg` | Pham Nhat (@ph4minhat) | [Unsplash](https://unsplash.com/photos/minimalist-house-with-green-trees-YhXZhD0ATD0) |
+| `p01-a.jpg` | 旅人 森 (@forester2022) | [Unsplash](https://unsplash.com/photos/modern-house-with-wood-siding-s1Ywd6wgQyE) |
+| `p01-b.jpg` | Suhyeon Choi (@by_syeoni) | [Unsplash](https://unsplash.com/photos/sunlit-interior-with-sofa-and-table-ehxwis6Ltxg) |
+| `p02.jpg` | Alesia Kazantceva (@alesiaskaz) | [Unsplash](https://unsplash.com/photos/minimalist-concrete-staircase-with-vase-0B7ijYKaKcE) |
+| `p03.jpg` | Hazel J (@hhj8861) | [Unsplash](https://unsplash.com/photos/empty-modern-cafe-interior-with-tables-chairs-and-plants-B6xJi0rn040) |
+| `p04.jpg` | Declan Sun (@declansun) | [Unsplash](https://unsplash.com/photos/white-gravel-courtyard-with-modern-building-and-tree-ADftSGzfEbs) |
+| `p05-a.jpg` | G (@visualsbying) | [Unsplash](https://unsplash.com/photos/concrete-wall-texture-is-seen-up-close-v8o8Fvxxnto) |
+| `p05-b.jpg` | Julia (@beazy) | [Unsplash](https://unsplash.com/photos/minimalist-living-room-with-wooden-sideboard-aX1TTOuq83M) |
+| `retrato.jpg` | Jonathan Borba (@jonathanborba) | [Unsplash](https://unsplash.com/photos/architectural-blueprints-and-a-laptop-on-a-marble-desk-rn00OVh0gEI) |
+
+Os dados completos estão em `public/images/exemplos/creditos.json`. Antes de usar o site como portfólio real, troque todas pelas fotos autorizadas (seção 4).
 
 ## 6. Direção criativa
 

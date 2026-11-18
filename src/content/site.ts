@@ -15,7 +15,7 @@ export const site = {
   showDraftNotes: true,
 
   /** Domínio final. Atualize também index.html, robots.txt e sitemap.xml. */
-  url: 'https://douglasbahia.com.br',
+  url: 'https://iltonferreira.github.io/douglas-bahia',
 
   name: 'Douglas Bahia', // briefing
   shortName: 'Bahia', // bio.site: "Bahia | Arquiteto"

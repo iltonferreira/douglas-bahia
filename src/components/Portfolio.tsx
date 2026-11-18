@@ -50,8 +50,9 @@ export function Portfolio() {
         <Reveal className="portfolio__intro" delay={80}>
           <p>Uma seleção de trabalhos em arquitetura residencial, comercial e paisagismo.</p>
           <DraftNote>
-            As fotografias e os dados de cada projeto serão inseridos após autorização e envio dos arquivos
-            originais pelo Douglas.
+            As fotos atuais são imagens ilustrativas de banco de imagens, não projetos do Douglas. Serão
+            substituídas pelas fotografias reais e pelos dados de cada projeto após autorização e envio dos
+            arquivos originais.
           </DraftNote>
         </Reveal>
       </div>
